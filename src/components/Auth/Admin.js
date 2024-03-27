@@ -27,6 +27,7 @@ const getData =(data)=>{
 return (
     <div>
       <AuthForm onSubmit={getData} isAdmin={true} />
+     
     </div>
   )
 }

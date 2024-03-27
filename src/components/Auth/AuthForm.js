@@ -55,6 +55,7 @@ const AuthForm = ({ onSubmit, isAdmin}) => {
              value={inputs.name}
              onChange={handleChange}
           />
+          
           </>
          )
           
@@ -85,13 +86,26 @@ const AuthForm = ({ onSubmit, isAdmin}) => {
           onClick={()=> setIsSignup(!isSignup)}
          >
           Switch To {isSignup ? "Login" : "Signup"}
-         </Button>)}
+         </Button>
+         
+         )}
+       
          </Box>
          
-
+         
       </form>
+      {/* <p style={{textAlign:'center',fontWeight:'bold'}}>Eaxmple </p> */}
+      {
+        isAdmin ? <>
+        <span style={{textAlign:'center'}}>AdminEmail: deepti123@gmail.com</span>
+      <span style={{textAlign:'center',marginRight:'25px',marginBottom:'10px'}}>Pwd: deepti123</span>
+               </>: ""
+
+      }
+      
       
     </Dialog>
+    
   )
 }
 
